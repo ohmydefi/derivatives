@@ -45,6 +45,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    background: linear-gradient(#3E3E3E 0%, #202020 35%);
+    background: linear-gradient(#3E3E3E 0%, #202020 45%);
   }
 `

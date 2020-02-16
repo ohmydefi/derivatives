@@ -22,6 +22,7 @@ const StyledCard = styled.div`
   width: 100%;
   
   a {
+    color: inherit;
     text-decoration: none;
     display: flex;
     flex-direction: column;

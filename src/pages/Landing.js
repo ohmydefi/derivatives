@@ -103,13 +103,13 @@ export default function Landing () {
             <h3>Our Products</h3>
 
             <div className='products'>
-              <ProductCard kind='building'>
+              <ProductCard kind='building' link='//building.ohmydefi.com'>
                 Here you can create and sell either a put or a call, of any asset, strike and maturity combination.
               </ProductCard>
-              <ProductCard kind='writing'>
+              <ProductCard kind='writing' link='//writing.ohmydefi.com'>
                 Write and sell American puts and calls for the same maturity and strike price.
               </ProductCard>
-              <ProductCard kind='hedging'>
+              <ProductCard kind='hedging' link='//hedging.ohmydefi.com'>
                 Buy a long straddle on ETH:DAI and hedge against ETH’s volatility.
               </ProductCard>
             </div>
