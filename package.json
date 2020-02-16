@@ -2,7 +2,6 @@
   "name": "derivatives",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ohmydefi.github.io/derivatives",
   "description": "Derivatives on chain are here",
   "scripts": {
     "start": "react-scripts start",
