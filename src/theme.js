@@ -8,7 +8,13 @@ export const color = {
   success: '#2ecc71',
   danger: '#e74c3c',
   warning: '#f1c40f',
-  grey: '#e1e1e1'
+  grey: '#e1e1e1',
+  green1: '#CEED74',
+  green2: '#77B796',
+  purple1: '#8377B7',
+  pink1: '#D06AF4',
+  blue1: '#466D94',
+  black1: '#181717'
 }
 
 export const sizes = {
@@ -21,29 +27,24 @@ export const sizes = {
 export const media = createMediaQueries(sizes)
 
 export const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'AvenirNext-Bold';
+    src: local('AvenirNext-Bold'), url(fonts/AvenirNextLTPro-Bold.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'AvenirNext-Regular';
+    src: local('AvenirNext-Regular'), url(fonts/AvenirNextLTPro-Regular.otf) format('truetype');
+  }
+  
   html {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: rgb(1, 1, 1);
+    scroll-behavior: smooth;
   }
   
   body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: inherit;
-    
-    & > div {
-      height: 100%;
-      overflow: auto;
-    }
-  }
-  
-  .exchange-button {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
+    background: linear-gradient(#3E3E3E 0%, #202020 35%);
   }
 `

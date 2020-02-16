@@ -1,11 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { GlobalStyles } from 'theme'
-import { Header } from 'components'
+import { Footer, Header } from 'components'
 import { useWeb3Provider, Web3Context } from 'hooks/web3'
-import { Dashboard } from 'pages'
-
-const basename = process.env.NODE_ENV === 'development' ? '/' : '/option-deployer'
+import { Dashboard, Landing } from 'pages'
 
 function App () {
   const { web3 } = useWeb3Provider()
@@ -13,9 +11,11 @@ function App () {
   return (
     <Web3Context.Provider value={web3}>
       <GlobalStyles />
-      <Router basename={basename}>
+      <Router>
         <Header />
+        <Landing />
         <Dashboard />
+        <Footer />
       </Router>
     </Web3Context.Provider>
   )

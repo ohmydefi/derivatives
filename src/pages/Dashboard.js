@@ -9,7 +9,7 @@ export default function Dashboard () {
   const [isLoading, setLoading] = useState(false)
 
   return (
-    <Page path='/' exact>
+    <Page path='/dashboard' exact>
       <Container>
         <OptionForm
           isSubmitting={isLoading}

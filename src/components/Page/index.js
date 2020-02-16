@@ -9,7 +9,7 @@ const StyledPage = styled.div`
   
   main {
     flex-grow: 1;
-    padding: 30px 0;
+    padding: 0;
   }
 `
 
