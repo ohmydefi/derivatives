@@ -88,6 +88,7 @@ export default function Landing () {
           <FullHeightContainer>
             <div className='first-area'>
               <h1>Decentralizing <br />Options Market</h1>
+              <h2>Write Options, Buy Strategies, or Create Your Own Option</h2>
               <a href='#products'>
                 <Button kind='green'>Check out how</Button>
                 <DownChevron />
