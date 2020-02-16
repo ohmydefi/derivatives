@@ -31,7 +31,7 @@ const StyledLanding = styled.div`
     font-family: AvenirNext-Bold, sans-serif;
     font-size: 35px;
     letter-spacing: -1.47px;
-    padding: 40px 0 20px 0;
+    padding: 40px 0;
   }
   
   .first-area {
@@ -87,12 +87,7 @@ export default function Landing () {
         <Container>
           <FullHeightContainer>
             <div className='first-area'>
-              <h1>Derivatives on <br />chain are here</h1>
-              <h2>
-                Derivatives On Chain Are HereDerivatives On Chain Are HereDerivatives On
-                Chain Are HereDerivatives On Chain Are Here
-                Derivatives On Chain Are Here
-              </h2>
+              <h1>Decentralizing <br />Options Market</h1>
               <a href='#products'>
                 <Button kind='green'>Check out how</Button>
                 <DownChevron />
@@ -103,13 +98,13 @@ export default function Landing () {
             <h3>Our Products</h3>
 
             <div className='products'>
-              <ProductCard kind='building' link='//building.ohmydefi.com'>
+              <ProductCard kind='building' link='//builder.ohmydefi.com'>
                 Here you can create and sell either a put or a call, of any asset, strike and maturity combination.
               </ProductCard>
-              <ProductCard kind='writing' link='//writing.ohmydefi.com'>
+              <ProductCard kind='writing' link='//writer.ohmydefi.com'>
                 Write and sell American puts and calls for the same maturity and strike price.
               </ProductCard>
-              <ProductCard kind='hedging' link='//hedging.ohmydefi.com'>
+              <ProductCard kind='hedging' link='//hedger.ohmydefi.com'>
                 Buy a long straddle on ETH:DAI and hedge against ETH’s volatility.
               </ProductCard>
             </div>

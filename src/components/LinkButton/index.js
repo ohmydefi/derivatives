@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 import { color } from 'theme'
 
-const Button = styled.button`
+const LinkButton = styled(Link)`
   font-family: AvenirNext-Regular, sans-serif;
   border-radius: 20px;
   border: none;
@@ -9,18 +10,13 @@ const Button = styled.button`
   text-transform: capitalize;
   letter-spacing: -0.84px;
   padding: 6px 34px;
+  text-decoration: none;
   transition: 200ms;
   outline: 0;
   color: white;
   display: inline-block;
   background-color: ${color.purple1};
   user-select: none;
-  
-  ${props => props.size === 'big' ? css`
-    font-size: 30px;
-    padding: 9px 70px;
-    border-radius: 30px;
-  ` : ''}
   
   ${props => props.kind === 'green' ? css`
     color: black;
@@ -41,4 +37,4 @@ const Button = styled.button`
   }
 `
 
-export default Button
+export default LinkButton
