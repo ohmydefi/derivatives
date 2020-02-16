@@ -47,4 +47,22 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: linear-gradient(#3E3E3E 0%, #202020 45%);
   }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .text-blue {
+    color: #7486ED;
+  }
+  
+  .text-green {
+    color: #ABED74;
+  }
+  
+  .text-red {
+    color: #ED9174;
+  }
 `
