@@ -8,8 +8,9 @@ import MetamaskLogo from './img/metamask-icon.svg'
 import { color } from 'theme'
 import Modal from '../Modal'
 import ConnectButton from '../ConnectButton'
+import getNetworkname from '../../constants/networks'
 
-import { useDefaultAccount } from '../../hooks/web3'
+import { useDefaultAccount, getNetworkVersion } from '../../hooks/web3'
 
 const StyledHeader = styled.header`
   background-color: ${color.black1};
@@ -86,6 +87,7 @@ const StyledModalContainer = styled.div`
 export default function Header ({ onEnable }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const account = useDefaultAccount()
+  const network = getNetworkVersion()
 
   return (
     <StyledHeader>
@@ -127,7 +129,7 @@ export default function Header ({ onEnable }) {
           <Link to='/'>
             <img src={logo} alt='ohmyDefi' />
           </Link>
-          <div style={{ paddingTop: '5px' }}>Mainnet</div>
+          <div style={{ paddingTop: '5px' }}>{getNetworkname(network)}</div>
         </StyledFirstContainer>
         {account ? (
           <ConnectButton account={account} />

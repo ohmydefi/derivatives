@@ -26,8 +26,9 @@ const FooterLogo = styled.img.attrs({
   src: logo,
   alt: 'ohmyDefi!'
 })`
-  width: 100%;
-  max-width: 145px;
+  height: 100%;
+  max-height: 35px;
+  padding-top: 1em;
 `
 
 export default function Footer () {
@@ -39,7 +40,7 @@ export default function Footer () {
         </Link>
 
         <p>
-          Need a help? - <a href='mailto:support@ohmydefi.com'>support@ohmydefi.com</a>
+          Need a help? - <a href='mailto:contact@ohmydefi.com'>contact@ohmydefi.com</a>
         </p>
 
       </Container>
