@@ -9,6 +9,7 @@ export const color = {
   danger: '#e74c3c',
   warning: '#f1c40f',
   grey: '#e1e1e1',
+  grey2: '#95a5a6',
   green1: '#CEED74',
   green2: '#77B796',
   purple1: '#8377B7',
@@ -31,37 +32,37 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'AvenirNext-Bold';
     src: local('AvenirNext-Bold'), url(fonts/AvenirNextLTPro-Bold.otf) format('truetype');
   }
-  
+
   @font-face {
     font-family: 'AvenirNext-Regular';
     src: local('AvenirNext-Regular'), url(fonts/AvenirNextLTPro-Regular.otf) format('truetype');
   }
-  
+
   html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: rgb(1, 1, 1);
     scroll-behavior: smooth;
   }
-  
+
   body {
     background: linear-gradient(#3E3E3E 0%, #202020 45%);
   }
-  
+
   #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   }
-  
+
   .text-blue {
     color: #7486ED;
   }
-  
+
   .text-green {
     color: #ABED74;
   }
-  
+
   .text-red {
     color: #ED9174;
   }

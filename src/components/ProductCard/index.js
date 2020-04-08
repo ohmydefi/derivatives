@@ -20,25 +20,25 @@ const StyledCard = styled.div`
   border-radius: 35px;
   transition: 200ms ease-in;
   width: 100%;
-  
+
   a {
     color: inherit;
     text-decoration: none;
     display: flex;
     flex-direction: column;
   }
-  
+
   p {
     min-height: 100px;
     padding: 0 30px;
   }
-  
+
   img {
     margin: 100px 20px 80px 20px;
     max-width: 100%;
     object-fit: scale-down;
   }
-  
+
   span {
     color: white;
     font-family: AvenirNext-Bold, sans-serif;
@@ -50,7 +50,7 @@ const StyledCard = styled.div`
     padding-top: 20px;
     padding-bottom: 20px;
     ${props => props.kind === 'building' ? css`
-       background: ${color.blue1};
+       background: ${color.grey2};
     ` : ''}
     ${props => props.kind === 'writing' ? css`
        background: ${color.purple1};
@@ -59,7 +59,7 @@ const StyledCard = styled.div`
        background: ${color.pink1};
     ` : ''}
   }
-  
+
   &:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
@@ -67,12 +67,22 @@ const StyledCard = styled.div`
 `
 
 export default function ProductCard ({ kind, children, link }) {
+  const onClick = event => {
+    if (kind === 'building') {
+      event.preventDefault()
+      return false
+    }
+  }
   return (
     <StyledCard kind={kind}>
-      <a href={link}>
+      <a href={link} onClick={onClick}>
         <img src={images[kind]} alt={kind} />
         <p>{children}</p>
-        <span>See more</span>
+        {kind === 'building' ? (
+          <span>Soon</span>
+        ) : (
+          <span>See more</span>
+        )}
       </a>
     </StyledCard>
   )
