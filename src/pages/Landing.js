@@ -100,7 +100,7 @@ export default function Landing () {
 
             <div className='products'>
               <ProductCard kind='writing' link='//writer.ohmydefi.com'>
-                Write and sell American puts and calls for the same maturity and strike price.
+                Write, sell and buy American put and call options for the ETH:DAI market.
               </ProductCard>
               <ProductCard kind='hedging' link='//hedger.ohmydefi.com'>
                 Buy a long straddle on ETH:DAI and hedge against ETH’s volatility.
