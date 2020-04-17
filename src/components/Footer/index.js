@@ -1,49 +1,50 @@
-import { Container } from 'components'
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from './logo.svg'
+import mail from './icons/mail.svg'
+import twitter from './icons/twitter.svg'
+import github from './icons/github.svg'
+import medium from './icons/medium.svg'
+import telegram from './icons/telegram.svg'
+import icon from './icons/logo.svg'
+import ExternalLink from '../ExternalLink'
+import Logo from './Logo'
+import SocialLinks from './SocialLInks'
 
-const StyledFooter = styled.footer`
-  background: transparent;
-  color: white;
-  font-family: AvenirNext-Bold, sans-serif;
-  font-size: 20px;
-  padding: 80px 0 100px 0;
-  
-  ${Container} {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+const FooterContainer = styled.footer`
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 50px;
 `
 
-const FooterLogo = styled.img.attrs({
-  src: logo,
-  alt: 'ohmyDefi!'
-})`
-  height: 100%;
-  max-height: 35px;
-  padding-top: 1em;
+const FooterIcon = styled.img`
+   height: 23px!important;
+   width: 23px!important;
 `
 
-export default function Footer () {
-  return (
-    <StyledFooter>
-      <Container>
-        <Link to='/'>
-          <FooterLogo />
-        </Link>
+const Footer = () => (
+  <FooterContainer>
+    <Logo to='/'>
+      <FooterIcon src={icon} alt='ohmydefi-icon' />
+    </Logo>
+    <SocialLinks>
+      <ExternalLink href='mailto:contact@ohmydefi.com'>
+        <img src={mail} alt='email' />
+      </ExternalLink>
+      <ExternalLink href='https://t.me/joinchat/DSUxh1QcM-e7SRQFzZywxQ'>
+        <img src={telegram} alt='telegram' />
+      </ExternalLink>
+      <ExternalLink href='https://medium.com/ohmydefi'>
+        <img src={medium} alt='medium' />
+      </ExternalLink>
+      <ExternalLink href='https://twitter.com/ohmydefi'>
+        <img src={twitter} alt='twitter' />
+      </ExternalLink>
+      <ExternalLink href='https://github.com/ohmydefi/'>
+        <img src={github} alt='github' />
+      </ExternalLink>
+    </SocialLinks>
+  </FooterContainer>
+)
 
-        <p>
-          Need a help? - <a href='mailto:contact@ohmydefi.com'>contact@ohmydefi.com</a>
-        </p>
-
-      </Container>
-    </StyledFooter>
-  )
-}
+export default Footer

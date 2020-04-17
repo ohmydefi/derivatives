@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
 } else {
   ReactGA.initialize('test', { testMode: true })
 }
-ReactGA.pageview(window.location.pathname + window.location.search)
+ReactGA.pageview('landing' + window.location.pathname + window.location.search)
 
 function App () {
   const { web3, enableFortmatic, enableMetamask } = useWeb3Provider(true)
