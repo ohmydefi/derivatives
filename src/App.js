@@ -4,6 +4,14 @@ import { Landing } from 'pages'
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { GlobalStyles } from 'theme'
+import ReactGA from 'react-ga'
+
+if (process.env.NODE_ENV === 'production') {
+  ReactGA.initialize('UA-163847729-1')
+} else {
+  ReactGA.initialize('test', { testMode: true })
+}
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 function App () {
   const { web3, enableFortmatic, enableMetamask } = useWeb3Provider(true)
