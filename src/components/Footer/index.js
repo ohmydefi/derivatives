@@ -31,7 +31,7 @@ const Footer = () => (
       <ExternalLink href='mailto:contact@ohmydefi.com'>
         <img src={mail} alt='email' />
       </ExternalLink>
-      <ExternalLink href='https://t.me/joinchat/G4YalxZjefnECXtCCpwE9A'>
+      <ExternalLink href='https://t.me/joinchat/G4Yalxu5tuhK-Ibm58phTQ'>
         <img src={telegram} alt='telegram' />
       </ExternalLink>
       <ExternalLink href='https://medium.com/ohmydefi'>
