@@ -6,7 +6,7 @@ const Container = styled.div`
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 100%;
+  width: 100%;
 
   ${media.xs.up`max-width: 540px;`}
   ${media.sm.up`max-width: 720px;`}
