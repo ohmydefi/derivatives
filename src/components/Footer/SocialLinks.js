@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import { media } from '../../theme'
+import { media } from 'theme'
 
 const SocialLinks = styled.div`
-  padding-top: 5px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -16,9 +15,8 @@ const SocialLinks = styled.div`
   img {
     width: 21px;
   }
-  
+
   ${media.sm.down`
-    margin-top: 10px;
     justify-content: center;
     width: 100%;
   `}
